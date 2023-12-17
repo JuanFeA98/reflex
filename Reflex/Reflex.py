@@ -1,17 +1,20 @@
 import reflex as rx
 
+from Reflex.components.navbar import navbar
+
+
 # Inicializamos una clase donde se almacenara el estado de la aplicación
 class State(rx.State):
     pass
 
-# Creamos un Componente de texto
+# Creamos el bloque donde se almacenarn nuestros componentes
 def index() -> rx.Component:
-    return (
-        rx.text(
-            'Hola, mundo!',
-            background = 'darkblue',
-            color = 'white'
-        )
+    return rx.vstack(
+        navbar(),
+        navbar(),
+        navbar(),
+        navbar(),
+        navbar()
     )
 
 # Inicializamos nuestra aplicación
