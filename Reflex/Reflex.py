@@ -1,7 +1,10 @@
 import reflex as rx
 
 from Reflex.components.navbar import navbar
+from Reflex.views.header.header import header
+from Reflex.views.links.links import links
 
+from Reflex.views.charts.line_chart import line_chart
 
 # Inicializamos una clase donde se almacenara el estado de la aplicación
 class State(rx.State):
@@ -11,10 +14,9 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.vstack(
         navbar(),
-        navbar(),
-        navbar(),
-        navbar(),
-        navbar()
+        header(),
+        links(),
+        line_chart()
     )
 
 # Inicializamos nuestra aplicación

@@ -11,10 +11,10 @@ def navbar() -> rx.Component:
             color='white'
         ),
         position='sticky',
+        width='100%',
         background='black',
         padding_x='16px',
         padding_y='8px',
         z_index='999',
-        width='100%'
     )
 ) 
